@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="icon.webp">
+    <title>Photo Collection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/static/album/scripts.js"></script>
+    <link rel="stylesheet" href="/static/album/styles.css">
+  </head>
+  <body style="background-color:rgb(0, 0, 0);">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Welcome to Funtional Photo Album</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <button  class="btn btn-danger navbar-btn" id="show-btn" onclick="showHiddenImages()">All</button>
+          <button class="btn btn-danger navbar-btn" onclick="audi()">Audi</button>
+          <button  class="btn btn-danger navbar-btn" onclick="bmw()">BMW </button>
+          <button class="btn btn-danger navbar-btn" onclick="volvo()"> Volvo</button>
+          <button class="btn btn-danger navbar-btn" onclick="lexus()">Lexus</button>
+          <button class="btn btn-danger navbar-btn" onclick="maserati()">Maserati</button>
+          <button class="btn btn-danger navbar-btn" onclick="merc()">Mercedes Benz</button>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Image Processing
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <button class="btn" onclick="bright()">Brighter Images</button>
+                      <button class="btn" onclick="dim()">Dimmer Images</button>
+                      <button class="btn" onclick="gray()">Gray Scale Images</button>
+                      <button class="btn" onclick="remove()">Remove Effects</button>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <main>
+      <div class="row">
+        <div class="column">
+          <img
+            id="a1"
+            src="/static/album/a1.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="a2"
+            src="/static/album/a2.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="ms1"
+            src="/static/album/ms1.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="maserati"
+          />
+          <img
+            id="a3"
+            src="/static/album/a3.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="a4"
+            src="/static/album/a4.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="a5"
+            src="/static/album/a5.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+        </div>
+        <div class="column">
+          <img
+            id="b1"
+            src="/static/album/b1.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          />
+    
+          <img
+            id="b2"
+            src="/static/album/b2.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          />
+          <img
+            id="b3"
+            src="/static/album/b3.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          /> 
+          <img
+          id="lx3"
+          src="/static/album/lx3.webp"
+          style="width: 100%"
+          ondblclick="display(this.id)"
+           class="lexus"
+        />
+          <img
+            id="b4"
+            src="/static/album/b4.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          /> 
+          <img
+          id="lx2"
+          src="/static/album/lx2.jpeg"
+          style="width: 100%"
+          ondblclick="display(this.id)"
+           class="lexus"
+        />
+    
+          <img
+            id="b5"
+            src="/static/album/b5.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          />
+        </div>
+        <div class="column">
+          <img
+            id="v1"
+            src="/static/album/v1.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+          <img
+            id="v2"
+            src="/static/album/v2.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+          <img
+            id="v3"
+            src="/static/album/v3.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+          <img
+            id="v4"
+            src="/static/album/v4.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+
+          
+          <img
+            id="ms2"
+            src="/static/album/ms2.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="maserati"
+          />
+          
+        <!-- </div>
+        <div class="column"> -->
+          <img
+            id="lx1"
+            src="/static/album/lx1.avif"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="lexus"
+          />
+
+        </div>
+        <div class="column">
+          <img
+            id="m1"
+            src="/static/album/m1.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="merc"
+          />
+          <img
+            id="m2"
+            src="/static/album/m2.avif"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="merc"
+          />
+          <img
+            id="ms3"
+            src="/static/album/ms3.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="maserati"
+          />
+          <img
+            id="m3"
+            src="/static/album/m3.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="merc"
+          />
+          <img
+            id="m4"
+            src="/static/album/m4.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="merc"
+          />
+          <img
+            id="m5"
+            src="/static/album/m5.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="merc"
+          />
+        </div>
+      </div>
+    </main>
+
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

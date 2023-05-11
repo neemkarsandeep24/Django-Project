@@ -1,0 +1,352 @@
+<html lang="en" >
+  <!-- data-bs-theme="dark" -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/style.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+
+  <body>
+    <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
+      <header class="img-fluid">
+        <center>
+          <h2>Sandeep Neemkar</h2>
+          <h3>A.I Undergrad</h3>
+          <br />
+          <img src="/static/profile/pfp.jpg" class="rounded-circle" alt="..." width="20%" />
+        </center>
+      </header>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio:</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carousel">BucketList</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#fsd">Full-Stack Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#connect">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+     <br><br>
+    <section id="about">
+      <button type="button" class="btn-primary"><h5>About Me</h5></button>
+      <section class="tbox">
+        <p>
+          A software programming enthusiast with sound knowledge of computer
+          science. An aspiring full-stack developer with a penchant for detail
+          and a commitment to producing high quality code. Adept at working in a
+          team environment. Ability to solve problems and analyze data with a
+          passion for staying up-to-date with industry trends.
+        </p>
+      </section>
+    </section>
+
+    <section id="experience">
+      <button type="button" class="btn-primary"><h5>Experience</h5></button>
+      <section class="tbox">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                1. Jack Compiler || Software Architecture
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    Built a naive scaled-down Java like compiler - Jack Compiler
+                  </li>
+                  <li>Converts High-Level Jack code to Intermediate VM code</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                2. Turtle Bot || Robotic Simulation
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                TurtleSim simulation-based image contour sketching, implemented
+                in Robot Operating System using Raspberry Pi and robotic kit
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                3. Image Processing with MATLAB || Machine Learning
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Developed an ML-based app that colorizes a grayscale image using
+                just an input reference image. Further integrated a PCA image
+                compressor to reduce the image size as per the user's
+                requirement.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- <section id="skills">
+      <button type="button" class="btn-primary"><h5>Skills</h5></button>
+      <section class="tbox">
+        <p>
+          A software programming enthusiast with sound knowledge of computer
+          science. An aspiring full-stack developer with a penchant for detail
+          and a commitment to producing high quality code. Adept at working in a
+          team environment. Ability to solve problems and analyze data with a
+          passion for staying up-to-date with industry trends.
+        </p>
+      </section>
+    </section> -->
+
+    <section id="carousel">
+      <button type="button" class="btn-primary"><h5>My BucketList</h5></button>
+      <section class="py-5">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <img
+                src="/static/profile/bucketlist/norway.jpg"
+                class="d-block w-100"
+                alt="norway"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>1. Northern Lights, Norway</h5>
+                <p>A night uder the glowing sky</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <img
+                src="/static/profile/bucketlist/prague.jpg"
+                class="d-block w-100"
+                alt="prague"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>2. Prague, Czech Republic</h5>
+                <p>Christmas holidays couldnt get any better than here!</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="/static/profile/bucketlist/italy.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>3. Sardinia, Italy</h5>
+                <p>pizza at streets of italy!</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="/static/profile/bucketlist/swiss.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>4. Mt. Zermatt, Switzerland</h5>
+                <p>A walk along the countryside!</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <img
+                src="/static/profile/bucketlist/georgia.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>5. Tbilisi, Georgia</h5>
+                <p>Hit the road for a long drive!!</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <section id="fsd" class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn-primary"><h5>Full-Stack Development</h5></button>
+      </section>
+    </section>
+      <br>
+      <br>
+      <br>
+      <section class="fsdbox">
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card">
+            <img src="/static/profile/tictac.png" class="card-img-top"  >
+            <div class="card-body">
+              <h5 class="card-title">1. <a href="tictac" target="_blank">Tic Tac Toe</a></h5>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/profile/gallery.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">2. <a href="album" target="_blank">Photo Album</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/profile/wordle.jpg" class="card-img-top" alt="wordle pic">
+            <div class="card-body">
+              <h5 class="card-title">3. <a href="wordle" target="_blank">Wordle</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+<br>
+<br>
+      <section id="connect">
+        <button type="button" class="btn-primary"><h5>Connect</h5></button>
+         <p > 
+          <div class="container text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <a href="https://github.com/neemkarsandeep24" class="fa fa-github-square" target="_blank"></a>
+              </div>
+              <div class="col">
+                <a href="mailto:neemkarsandeep24@gmail.com" class="fa fa-envelope" target="_blank"></a>
+              </div>
+              <div class="col">
+                <a href="https://www.linkedin.com/in/neemkar/" class="fa fa-linkedin-square" aria-hidden="true" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+         </p>
+         </section>
+         <p><a href="#">Back to Top</a></p>
+  
+  </body>
+</html>
