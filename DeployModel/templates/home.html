@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor</title>
+    <link rel="stylesheet" href="/static/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="/static/1.png">
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Enter the Details: </h2>
+        <form action="{% url 'result' %}" method="get" class="form-input">
+            {%csrf_token%}
+            <div class="user-box">
+                <input class="form-control" min="0" type="number" step="1" required name="age" autocomplete="off">
+                <label>Age</label>
+            </div>
+            <div class="user-box">
+                <label style="color: #03e9f4;">Menopause</label>
+                <br>
+                <br>
+
+                <select class="form-control" required name="menopause">
+                    <option class="form-control" disabled selected value>--Select an Option--</option>
+                    <option class="form-control" value="1">Premenstrual</option>
+                    <option class="form-control" value="0">Postmenstrual</option>
+                </select>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="user-box">
+                <input class="form-control" type="number" required name="tumorSize">
+                <label>Tumor Size (mm)</label>
+            </div>
+            <div class="user-box">
+                <input class="form-control" type="number" min="0" max="39" required name="invNodes">
+                <label># Affected Lymph Nodes (0-39)</label>
+            </div>
+            <div class="user-box">
+                <label style="color: #03e9f4;">Did Cancer Invade Surrounding Tissue?</label>
+                <br>
+                <br>
+                <select class="form-control" required name="nodeCaps">
+                    <option class="form-control" disabled selected value>--Select an Option--</option>
+                    <option class="form-control" value="1">Yes</option>
+                    <option class="form-control" value="0">No</option>
+                </select>
+                <br>
+                <br>
+            </div>
+            <div class="user-box">
+                <label style="color: #03e9f4;">Degree of Malignancy </label>
+                <br>
+                <br>
+                <select class="form-control" required name="degMalig">
+                    <option class="form-control" disabled selected value>--Select an option--</option>
+                    <option class="form-control" value="1">Grade 1: Cells retain usual characteristics</option>
+                    <option class="form-control" value="2">Grade 2: Cells are relatively abnormal</option>
+                    <option class="form-control" value="3">Grade 3: Cells are highly abnormal</option>
+                </select>
+
+            </div>
+
+            <div id="sub">
+                <!-- <input type="submit" value="Submit" id="submit" /> -->
+                <button type="submit" id="submit"> <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnosis Result</title>
+    <link rel="icon" type="image/x-icon" href="/static/1.png">
+    <link rel="stylesheet" href="/static/result.css">
+</head>
+
+<body>
+    <div class="text-box">
+        <h1>Cancer Diagnosis Result</h1>
+        <br>
+        <h3>The Predicted Result : <span style="color:#03e9f4;">{{result}}</span> <br></h3>
+        <br>
+        <br>
+        <p>With the given data you entered, the result is predicted to have {{result}}. It is advised to consult your doctor for furthermore on this. </p>
+        <br>
+        <br>
+        <a href="{% url 'index' %}" style="display: flex; justify-content: center; font-size: 1.25rem;"><button class="glow-on-hover" type="button" style="font-size: 1.25rem;">Home Page</button></a>
+    </div>
+
+
+
+
+<!--<pre>-->
+<!--    Breast cancer is :-->
+<!--    -&#45;&#45;0 non-recurrent-->
+<!--    -&#45;&#45;1 recurrent-->
+<!--</pre>-->
+
+
+</body>
+</html>
